@@ -1,0 +1,18 @@
+{
+  "name": "playwright-ai-testing-framework",
+  "version": "1.0.0",
+  "description": "An automated Software Testing Life Cycle (STLC) pipeline using Playwright and AI concepts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "start-jira": "node jira_mock/jira_mock_server.js",
+    "run-pipeline": "node mcp_scripts/06_full_stlc_pipeline.js",
+    "report": "npx playwright show-report reports/html-report"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "playwright": "^1.58.2"
+  }
+}
